@@ -1,0 +1,117 @@
+/* COLOR PALETTE */
+:root {
+    --uranian-blue: #bce7fd;
+    --lilac: #c492b1;
+    --raspberry-rose: #af3b6e;
+    --charcoal: #424651;
+    --spring-green: #21fa90;
+    --pale-green: #d2f7d0; /* Pale green for background */
+}
+
+/* GLOBAL STYLES */
+html {
+    box-sizing: border-box;
+    font-size: 16px; /* Base font size for better accessibility */
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html, body {
+    height: 100%; /* Ensure the body takes up full height */
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: var(--pale-green); /* Pale green background */
+    margin: 0;
+    padding: 0;
+    color: var(--charcoal);
+    line-height: 1.6; /* Improved readability */
+}
+
+/* links */
+a {
+    color: var(--lilac);
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+a:hover, a:focus {
+    color: var(--raspberry-rose);
+    outline: 2px solid var(--raspberry-rose);
+    outline-offset: 4px;
+}
+
+/* Focus States */
+a:focus, button:focus {
+    outline: 3px solid var(--spring-green);
+    outline-offset: 4px;
+}
+
+/* Ensure text legibility */
+p, h1, h2, h3, h4 {
+    margin-bottom: 20px;
+    color: var(--charcoal);
+}
+
+h1 {
+    font-size: 2.5rem; /* Scalable heading */
+    color: var(--charcoal); /* Dark text for good contrast */
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.125rem; /* Larger font size for readability */
+    line-height: 1.8;    /* Increased line height for better text legibility */
+    margin-bottom: 20px;
+    color: var(--charcoal);
+}
+
+/* Content Wrapper */
+.content-wrapper {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 700px;
+    background: #fff; /* White background inside the content wrapper */
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* HOME */
+.home .content-wrapper {
+    background: rgba(255, 255, 255, 0.9); /* Light transparent background */
+}
+
+/* Centered header (Reflection) */
+header {
+    background: none; /* No background color on the header */
+    padding: 0;
+    text-align: center; /* Center the header text */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem; /* Larger font size for heading */
+    color: var(--charcoal); /* Dark color for good contrast */
+    font-weight: bold; /* Make header bold for emphasis */
+}
+
+/* Accessibility-enhanced focus styles */
+a:focus, button:focus {
+    outline: 3px solid var(--spring-green);
+    outline-offset: 4px;
+}
